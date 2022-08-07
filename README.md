@@ -3,14 +3,14 @@
 
 Basic setup:
 ```py
-from deskdb import DataStore
+from deskdb import db
 
-db = deskdb.DataStore("db") # DataStore
+users_db = db.DataStore("users_db") # DataStore
 ```
 
 Write & Read:
 ```py
-db_item = db.get_item("bob") # DataStoreItem
+db_item = users_db.get_item("bob") # DataStoreItem
 
 db_item.write("cash", 500)
 print(db_item.read("cash")) # 500
