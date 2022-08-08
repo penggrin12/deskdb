@@ -18,5 +18,11 @@ db_item.increment("level", 1)
 db_item.decrement("xp", 100)
 ```
 
+Does it exists?
+```py
+db_item.is_valid("cash") # True
+db_item.is_valid("snake") # False
+```
+
 If value that ur trying to read is integer (example: `50`)  
 It will be returned as `int`
