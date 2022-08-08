@@ -13,7 +13,9 @@ Write & Read:
 db_item = users_db.get_item("bob") # deskdb.DataStoreItem
 
 db_item.write("cash", 500)
-print(db_item.read("cash")) # int(500)
+db_item.read("cash") # int(500)
+db_item.increment("level", 1)
+db_item.decrement("xp", 100)
 ```
 
 If value that ur trying to read is integer (example: `50`)  
